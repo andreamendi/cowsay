@@ -14,7 +14,7 @@ let historia = `${nombre} es un marciano que tiene ${edad}`
 
 console.log(historia);
 
-console.log(intro.historia(nombre, equipo,edad));
+console.log(intro.historia(nombre, equipo,edad,planeta));
 console.log(nudo.historia(equipo, planeta, sospechoso));
 console.log(fin.historia(equipo, emocion));
 
