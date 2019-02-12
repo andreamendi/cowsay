@@ -1,6 +1,7 @@
 const cowsay = require('cowsay');
 const intro = require('./intro');
 const nudo = require('./nudo');
+const nudo2 = require('./nudo2');
 const fin = require('./fin');
 
 const nombre = "Mook";
@@ -16,6 +17,7 @@ console.log(historia);
 
 console.log(intro.historia(nombre, equipo,edad));
 console.log(nudo.historia(equipo, planeta, sospechoso));
+console.log(nudo2.historia(edad,equipo, planeta, sospechoso));
 console.log(fin.historia(equipo, emocion));
 
 
@@ -24,5 +26,3 @@ console.log(cowsay.say({
   e : "x-o",
   T : "v "
 }));
-
-
