@@ -1,22 +1,24 @@
 const cowsay = require('cowsay');
 const intro = require('./intro');
-const nudo = require('./nudo');
+const nudo1 = require('./nudo1');
 const fin = require('./fin');
 
-const nombre = "Mook";
-const equipo = "Astros";
+const edad_espectadores = 11;
+const ciudad = "Toronto";
+const costo = "$5";
 const fraceVaquita = "hola";
-const planeta = "Marte";
+var visit = "visit";
+var local = "local";
 const sospechoso = "MundoTerrestre";
 const emocion = "feliz como una lombriz";
 var edad = Math.floor(Math.random() * 100);
-let historia = `${nombre} es un marciano que tiene ${edad}`
 
-console.log(historia);
 
-console.log(intro.historia(nombre, equipo,edad));
-console.log(nudo.historia(equipo, planeta, sospechoso));
-console.log(fin.historia(equipo, emocion));
+//console.log(historia);
+
+console.log(intro.historia(ciudad, costo,edad));
+console.log(nudo1.historia(ciudad, costo, edad_espectadores, visit, local));
+//console.log(fin.historia(equipo, emocion));
 
 
 console.log(cowsay.say({
@@ -24,5 +26,3 @@ console.log(cowsay.say({
   e : "x-o",
   T : "v "
 }));
-
-
