@@ -72,6 +72,12 @@ function juntarHistoria(randomPersonaje, randomEquipo){
   const introFin = fin.historia(edad, randomEquipo, emocion);
   const historiaCompleta = introHistoria + introNudoUno + introNudoDos + introFin;
   console.log(historiaCompleta);
+
+  fs.writeFile('historia.txt', historiaCompleta, function(err){
+    if(err){
+      throw err;
+    }
+  });
 }
 
 
