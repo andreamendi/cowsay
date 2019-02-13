@@ -33,7 +33,12 @@ fs.readFile ('personajes.txt','utf-8',function (error,contenido){
   console.log (personajerandom);
   console.log (personajes.length);
   console.log (personajes [0]);
-
+// primero se pone la ruta de donde estará, con que lo vamos a llenar, error
+  fs.writeFile('historia.txt',historiacompletaotra,function(err){
+    if (err) {
+      throw err;
+    }
+  });
 
 });
 
