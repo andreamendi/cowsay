@@ -4,7 +4,7 @@
   "description": "Este es mi primer paquete de node",
   "main": "index.js",
   "scripts": {
-    "cowsay": "./node_modules/.bin/cowsay"
+    "cowsay": "cowsay"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,6 @@
   "homepage": "https://github.com/AnuarHarb/intro-a-node#readme",
   "dependencies": {
     "cowsay": "^1.4.0"
-  }
+  },
+  "devDependencies": {}
 }
